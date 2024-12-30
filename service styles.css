@@ -57,7 +57,8 @@ body {
 
 .sub-headline {
     font-size: 1.2rem;
-    margin-top: 350px;
+    margin-top: 17%;
+    left: 50%;
     font-weight: bold;
 }
 
@@ -202,12 +203,29 @@ footer {
         flex-direction: column;
         gap: 15px;
         padding: 10px;
+        height: 100%;
+     }
+
+    .logo {
+        height: 15%;
+        width: 10%;
+        
+    } 
+    .logo img {
+        height: 20px;
+        margin-left: -10%;
+
     }
+
+    .footer-quick-access button {
+        margin-top: 5%;}
+
 
     .container {
         width: 100%;
         max-width: 300px; /* Adjust for smaller screens */
         height: 200px;
+        margin-left: 15%;
     }
 
     .container h2 {
@@ -215,17 +233,23 @@ footer {
     }
 
     .container p {
-        font-size: 0.9rem; /* Adjust description font size */
+        font-size: 0.3rem; /* Adjust description font size */
     }
 
     .headline {
-        font-size: 2rem; /* Adjust headline for smaller screens */
+        font-size: 0.8rem; /* Adjust headline for smaller screens */
     }
 
     .arrow-down {
-        font-size: 1.5rem; /* Smaller arrow size */
+        font-size: 0.5rem; /* Smaller arrow size */
     }
-}
+    .sub-headline {
+        margin-top: 5%;
+        left: 50%;
+        font-weight: bold;
+    }
+        
+    }
 
 @media screen and (max-width: 480px) {
     .container {
@@ -238,10 +262,20 @@ footer {
     }
 
     .container p {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     .headline {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        
+    }
+    .sub-headline {
+        font-size: 0.5rem;
+        margin-top: 18%;
+        left: 50%;
+        font-weight: bold;
+    }
+    .arrow-down {
+        font-size: 0.9rem; /* Smaller arrow size */
     }
 }

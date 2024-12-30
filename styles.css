@@ -12,7 +12,7 @@ body, html {
 /* Header Section */
 header {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;
 }
 
@@ -38,7 +38,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* Adjusted shadow opacity for better readability */
@@ -46,51 +46,6 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* For smaller screens */
-@media (max-width: 768px) {
-  .overlay1 {
-    font-size: 3rem; /* Reduced font size for mobile */
-    top: 40%; /* Adjusted position for smaller screens */
-  }
-}
-
-.sub-headline {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* Adjusted shadow opacity for better readability */
-  z-index: 2;
-}
-
-/* For smaller screens */
-@media (max-width: 768px) {
-  .sub-headline {
-    font-size: 1.5rem; /* Reduced font size for mobile */
-    top: 50%; /* Adjusted position for smaller screens */
-  }
-}
-
-/* Arrow Animation */
-.arrow-down {
-  font-size: 2rem;
-  margin-top: 10px;
-  cursor: pointer;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(10px);
-  }
-} 
 
 .logo {
   position: absolute;
@@ -182,9 +137,6 @@ section h2 {
 
 .about p {
   text-align: center;
-
-
-
 }
 
 
@@ -216,6 +168,7 @@ footer {
   color: white;
   margin: 0 10px;
   transition: all 0.3s ease;
+  margin-top: 2%;
 }
 
 .footer-quick-access button:hover {
@@ -234,21 +187,26 @@ footer {
 }
 
 /* Responsive Styles */
+
 @media screen and (max-width: 768px) {
   .overlay h1 {
-    font-size: 2.5rem;
+    font-size: 1.0rem;
+  }
+
+  .overlay {
+    font-size: 1.0rem;
   }
 
   .logo img {
-    width: 120px;
+    width: 50px;
   }
 
   .nav-buttons {
     top: 10px;
     right: 10px;
     flex-direction: column;
-    gap: 10px;
-  }
+    gap: 10px;}
+    
 
   .service-cards {
     flex-direction: column;
@@ -257,30 +215,63 @@ footer {
   section h2 {
     font-size: 2rem;
   }
+
+  .footer-quick-access button {
+    
+    margin-top: 5%;
+  }
+
+  header {
+    
+    height: 30vh;
+    
+  }
+  
+
+
 }
+
 
 @media screen and (max-width: 480px) {
   .overlay h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .logo img {
-    width: 100px;
+    width: 50px;
   }
 
   .nav-buttons button {
     font-size: 0.9rem;
     padding: 8px 16px;
+    
   }
 
   .card {
-    width: 100%;
+    width: 90%;
   }
 
   section h2 {
     font-size: 1.6rem;
   }
+
+  .footer-quick-access button {
+    
+    margin-top: 5%;
+  }
+
+  header {
+    
+    height: 30vh;
+    
+  }
+
+
+
+
 }
+
+
 /* Footer */
 footer {
     background-color: #004080;
@@ -297,7 +288,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  width: 100%;
+  width: 85%;
+  margin-left: 15%;
   gap: 30px;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
   background-color: #fff;
@@ -368,10 +360,12 @@ footer {
   .container-r {
     flex-direction: column; /* Stack sections vertically on smaller screens */
     align-items: center;
+    margin-left: 3%;
+    margin-right: 2%;
   }
 
   .left-r, .right {
-    max-width: 100%; /* Make both sections full width */
+    max-width: 90%; /* Make both sections full width */
     text-align: center; /* Center text and images */
   }
 

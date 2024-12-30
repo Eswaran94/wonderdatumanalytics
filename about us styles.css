@@ -58,7 +58,7 @@ body {
 
 .sub-headline {
   font-size: 1.8rem;
-  margin-top: 14%;
+  margin-top: 15%;
   font-weight: bold;
 }
 
@@ -187,3 +187,74 @@ footer {
     }
   }
   
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: calc(50vw);
+  }
+  .sub-headline {
+    font-size: 0.5rem;
+    margin-top: 20%;
+    left: 50%;
+    font-weight: bold;
+}
+.arrow-down {
+    font-size: 0.9rem; /* Smaller arrow size */
+}
+.About-parag {
+  font-size: 1rem;
+}  
+
+.logo {
+  height: 10%;
+  width: 10%;
+  
+} 
+.logo img {
+  height: 20px;
+  margin-left: -10%;
+
+}
+.footer-quick-access button {
+  margin-top: 5%;}
+      
+  }
+
+@media screen and (max-width: 480px) {
+  
+  .headline {
+      font-size: 1.0rem;
+      margin-left: 1%;
+      
+  }
+
+  .About-parag {
+    font-size: 1rem;
+  } 
+
+  .sub-headline {
+      font-size: 0.5rem;
+      margin-top: 30%;
+      left: 50%;
+      font-weight: bold;
+  }
+  .arrow-down {
+      font-size: 0.9rem; /* Smaller arrow size */
+  }
+
+  .logo {
+    height: 10%;
+    width: 10%;
+    
+} 
+.logo img {
+    height: 20px;
+    margin-left: -10%;
+
+}
+
+.footer-quick-access button {
+  margin-top: 5%;}
+  
+}
